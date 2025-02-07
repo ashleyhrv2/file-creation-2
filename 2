@@ -64,6 +64,7 @@ def whattype():
      CheckInfo2(whichtype,checkpoint1);
      
 def CheckInfo2(typewhich,lpointcheck):
+    global whichfilename;
     match(lpointcheck):
         case 'askinfo2':
             typefile = ord(str(typewhich));
@@ -72,7 +73,6 @@ def CheckInfo2(typewhich,lpointcheck):
                  whattype();    
             else:
                 if(typefile == 49):
-                    whichfilename = str(input(msg[0]));
                     whichfilename = whichfilename + ".doc";
                     Fileconnectivity();
                    
@@ -95,4 +95,3 @@ if __name__=="__main__":
      main();                 
                     
  
-
